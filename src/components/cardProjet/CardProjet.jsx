@@ -3,7 +3,7 @@ import SmallCard from '../SmallCard/SmallCardProjet';
 
 function CardProjet({ data }) {
 	return (
-		<div className='flex max-[680px]:flex-col justify-between flex-wrap items-center'>
+		<div className='mx-auto container  flex max-[680px]:flex-col justify-between flex-wrap items-center'>
 			{data &&
 				data.map((projet) => (
 					<div className='w-1/3 p-10 '>
@@ -26,13 +26,13 @@ function CardProjet({ data }) {
 										{projet.title}
 									</h5>
 								</a>
-								<p className='mb-3 font-normal text-gray-700 max-[680px]:text-[13px]'>
+								<p className='mb-3  text-gray-500 max-[680px]:text-[13px]'>
 									{projet.desc}
 								</p>
 								<div className='flex  justify-between'>
 									<div className='flex gap-2 justify-start items-center mt-2 mb-2'>
 										<img
-											className='rounded-full w-10 h-10'
+											className='rounded-full border border-primary w-12 h-12'
 											src={projet.avatar}
 											alt='profile picture'
 										/>
